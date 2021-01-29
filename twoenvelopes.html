@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="finished.css">
     <title>Paradoxical - Home Page</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,13 +22,84 @@
         <div class="box box3"> <a href="montyhall.html" style="color:white">Monty Hall Paradox</a> </div>
         <div class="box box4"> <a href="simpsons.html" style="color:white">Simpson's Paradox</a> </div>
         <div class="box box5"> <a href="coastline.html" style="color: white">Coastline Paradox</a> </div>
-        
+
     </div>
+
+
 
 
     <div>
-    <h1>The Two Envelopes Paradox</h1>
-
+        <h1>The Two Envelopes Paradox</h1>
     </div>
 
-</body>
+    <div>
+        <h2>The problem</h2>
+        <p>The two envelopes problem is a paradox in logic which is of special interest in decision theory, and for the
+            Bayesian interpretation of probability theory. The problem is as follows: <br>
+            <br>
+
+            "You are given two indistinguishable envelopes, each containing money. One contains twice as much as the
+            other. You may pick one envelope and keep the money it contains. Having chosen an envelope at will, but
+            before inspecting it, you are given the chance to switch envelopes. Should you switch?"
+            <br>
+            <br>
+            Although it may seem that there is no point in switching since the problem is symemetric, one may think that
+            since you stand to gain twice as much money if you switch while risking only a loss of half of what you
+            currently have, it is possible to argue that it is more beneficial to switch.
+        </p>
+    </div>
+
+    <div>
+        <h2>Simple algebraic approach</h2>
+        <p>Formulating this in to a simple decision table, we get:</p>
+
+        <table style="width:25%">
+            <tr>
+                <th>Your Choice</th>
+                <th>Other Choice</th>
+                <th>Money gained if switched</th>
+
+            </tr>
+            <tr>
+                <td style="text-align:center">X</td>
+                <td style="text-align:center">2X</td>
+                <td style="text-align:center">X</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">2X</td>
+                <td style="text-align:center">X</td>
+                <td style="text-align:center">-X</td>
+            </tr>
+        </table>
+        <p>So although doubling your money sounds like you stand to gain more than halving your money, the actual
+            gain/loss is equivalent. This approach suggests that making the switch is irrelevant, your expected outcome
+            is the same.</p>
+    </div>
+
+    <div>
+        <h2>The switching argument</h2>
+        <p>Another way to look at the problem is as follows:
+        <ol>
+            <li>I denote by A the amount in my selected envelope.</li>
+            <li>The probability that A is smaller is 1/2, and that it is the larger amount is also 1/2.</li>
+            <li>The other envelope may contain either 2A or A/2.</li>
+            <li>If A is the smaller amount, then the other envelope contains 2A.</li>
+            <li>If A is the larger amount, then the other envelope contains A/2.</li>
+            <li>Thus the other envelope either contains 2A with probability 1/2 and A/2 with probability 1/2.</li>
+            <li>So the expected value of the money in the other envelope is: 0.5(2A) + 0.5(A/2) = 5A/4.</li>
+            <li>This is greater than A so, on average, I gain by swapping.</li>
+            <li>After the switch, I can denote that content by B and reason in exactly the same manner as above.</li>
+            <li>I will conclude that the most rational thing to do is swap back again.</li>
+            <li>To be rational, I will thus end up swapping the envelopes indefinately.</li>
+            <li>As it seems more rational to open just any envelope than to swap indefinately, we have a contradiction.
+            </li>
+        </ol>
+        </p>
+    </div>
+
+    <div>
+    <h3>More information</h3>
+    <p>For more information on the problem, and a list of different solutions, <a
+            href="https://en.wikipedia.org/wiki/Two_envelopes_problem" target="_blank">click here.</a></p>
+    </div>
+        </body>
