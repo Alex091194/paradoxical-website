@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="finished.css">
+    <title>Paradoxical - Home Page</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box box1"> </div>
+        <div class="box box2"> <a href="index.html" style="color: white">Home</a> </div>
+        <div class="box box3"> <a href="montyhall.html" style="color:white">Monty Hall Paradox</a> </div>
+        <div class="box box4"> <a href="simpsons.html" style="color:white">Simpson's Paradox</a> </div>
+        <div class="box box5"> <a href="twoenvelopes.html" style="color: white;">Two Envelopes Paradox</a> </div>
+
+    </div>
+
+    <div>
+        <h1>The Coastline Paradox</h1>
+    </div>
+
+    <div>
+        <h2>The problem</h2>
+        <p> The coastline paradox is the counterintuitive observation that the coastline of a landmass does not have a
+            well defined length. This is because coastlines are formed via various natural events, and thus has a shape
+            that has been created in a statistically random way. The length of a coastline thus depends on the method
+            used to approximate its true length; since coastlines have features that vary massively in size, from
+            hundreds of kilometers, to fractions of a millmeter, there is no obvious size of the smallest feature that
+            should be taken into considering while measuring the length. </p>
+    </div>
+
+    <div>
+        <h2>Using Lines</h2>
+        <img src="coastline_100km.png" alt="british coastline divided into 50km lines" ALIGN="right" width="150"
+            height="200">
+        <img src="coastline_50km.png" alt="british coastline divided into 100km lines" ALIGN="right" width="150"
+            height="200">
+        <p>Perhaps the most intuitive way of calculating the length of a coastline would be to decide on a line length,
+            say 1km, and then see how many of those lines can fit (as best as one can) around the coast, and then count
+            the number of lines to obtain the length. The issue with this method lies in the complexity of the coastline
+            - for a smooth coastline such as South Africa, a reasonably accurate measurement would be obtained, however,
+            somewhere with a very ragged coastline, such as Norway, would get a much less accurate result, unless the
+            lengths of the lines used were extremely small. Setting aside the difficulty in finding the best fit for
+            such small lines, at which point should one say that the line is small enough? At 100m? At 1m? The smallest
+            theoretical length
+            that could be used is known as a Planck length, which is 1.6x10^-35m (that is 0.000...16m, with there being
+            35 zeroes in total). This leads on to the problem of
+            fractals - these are curves whose complexity changes depending on measurement scale. The issue is that these
+            fractals, as you zoom in further and further with near-infinite resolution, have increasing lengths - as a
+            matter of fact they tend towards infinity. It is because of this that is there no true accurate measurement
+            of a coastline. The images on the right show how well lines of length 100km and 50km fit around the British
+            coast, with a total measurement of 2,800km and 3,400km respectively. </p>
+    </div>
+
+    <div>
+        <h2>Box-counting method</h2>
+        <img src="britain_box.png" alt="british coastline divided into boxes" ALIGN="left" width="500" height="200">
+        <p style="width:75%">One method of calculating the fractal dimension of a set S in Euclidean space, or more generally a metric
+            space, is the Minkowski-Bouligand dimension method. To calculate the dimension, one needs to imagine that
+            the fractal (or in our case, coastline) is lying on an evenly spaced grid, and count how many boxes are
+            required to cover the set. The box counting method is calculated by seeing how this number changes as the
+            grid is made finer. The images on the left show how the varying number of boxes can fit around the British
+            coast.
+
+        </p>
+    </div>
+
+</body>
